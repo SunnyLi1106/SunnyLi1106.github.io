@@ -24,7 +24,7 @@
 <meta property="og:description" content="思路 很显然，只需要补齐一个周期减去前面不在周期里多出来的人数。如果前面恰好满一个周期，则输出周期的人数。 AC 代码 12345678910#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int main()&amp;#123;    int n,k;    cin &gt;&gt; n &gt;&gt; k;    if(n%k&#x3D;&#x3D;0)  cout &amp;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-04-22T21:07:03.000Z">
-<meta property="article:modified_time" content="2023-04-23T09:38:27.181Z">
+<meta property="article:modified_time" content="2023-04-23T09:56:30.169Z">
 <meta property="article:author" content="SunnyLi">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -385,24 +385,23 @@
   
     <article id="comments" lazyload>
       
-  <div class="disqus" style="width:100%">
-    <div id="disqus_thread"></div>
-    
-      <script type="text/javascript">
-        var disqus_config = function() {
-          this.page.url = 'https://sunnyli1106.github.io/solution-P9226/';
-          this.page.identifier = '/solution-P9226/';
-        };
-        Fluid.utils.loadComments('#disqus_thread', function() {
-          var d = document, s = d.createElement('script');
-          s.src = '//' + 'fluid' + '.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', new Date());
-          (d.head || d.body).appendChild(s);
-        });
-      </script>
-    
-    <noscript>Please enable JavaScript to view the comments</noscript>
-  </div>
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#gitalk-container', function() {
+      Fluid.utils.createCssLink('/css/gitalk.css')
+      Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js', function() {
+        var options = Object.assign(
+          {"clientID":"0e2a9f9a251dad07e03a","clientSecret":"92042740f91b197ab764a08ce767a29c77a72b8a","repo":"sunnyli1106.github.io","owner":"SunnyLi1106","admin":["SunnyLi1106"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":true,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {
+            id: 'f9fd68685ee37ec90f3f52e2e0b71244'
+          }
+        )
+        var gitalk = new Gitalk(options);
+        gitalk.render('gitalk-container');
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
 
 
     </article>
