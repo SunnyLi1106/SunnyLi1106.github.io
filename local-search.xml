@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>题解 P9226 糖果</title>
+    <link href="/solution-P9226/"/>
+    <url>/solution-P9226/</url>
+    
+    <content type="html"><![CDATA[<h2 id="思路">思路</h2><p>很显然，只需要补齐一个周期减去前面不在周期里多出来的人数。如果前面恰好满一个周期，则输出周期的人数。</p><h2 id="AC-代码">AC 代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-type">int</span> n,k;<br>    cin &gt;&gt; n &gt;&gt; k;<br>    <span class="hljs-keyword">if</span>(n%k==<span class="hljs-number">0</span>)  cout &lt;&lt; k;<br>    <span class="hljs-keyword">else</span>    cout &lt;&lt; k-(n%k);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>题解</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>题解 P8629 [蓝桥杯 2015 国 C] 机器人繁殖</title>
     <link href="/solution-P8629/"/>
     <url>/solution-P8629/</url>
@@ -17,12 +36,6 @@
       
     </categories>
     
-    
-    <tags>
-      
-      <tag>solution</tag>
-      
-    </tags>
     
   </entry>
   
@@ -43,12 +56,6 @@
     </categories>
     
     
-    <tags>
-      
-      <tag>solution</tag>
-      
-    </tags>
-    
   </entry>
   
   
@@ -67,12 +74,6 @@
       
     </categories>
     
-    
-    <tags>
-      
-      <tag>solution</tag>
-      
-    </tags>
     
   </entry>
   
@@ -93,12 +94,6 @@
     </categories>
     
     
-    <tags>
-      
-      <tag>solution</tag>
-      
-    </tags>
-    
   </entry>
   
   
@@ -117,12 +112,6 @@
       
     </categories>
     
-    
-    <tags>
-      
-      <tag>solution</tag>
-      
-    </tags>
     
   </entry>
   
@@ -143,12 +132,6 @@
     </categories>
     
     
-    <tags>
-      
-      <tag>solution</tag>
-      
-    </tags>
-    
   </entry>
   
   
@@ -168,12 +151,6 @@
     </categories>
     
     
-    <tags>
-      
-      <tag>solution</tag>
-      
-    </tags>
-    
   </entry>
   
   
@@ -192,12 +169,6 @@
       
     </categories>
     
-    
-    <tags>
-      
-      <tag>solution</tag>
-      
-    </tags>
     
   </entry>
   
