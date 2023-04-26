@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/iconimg.png">
-  <link rel="icon" href="/img/iconimg.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/iconsmg.png">
+  <link rel="icon" href="/img/iconsimg.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -565,27 +565,26 @@
   
   
   
+    <span id="webtime"></span>
+    <!-- js -->
+    <script type="text/javascript">function show_runtime() {
+            window.setTimeout("show_runtime()", 1000);
+            X = new Date("04/24/2023 12:30:00");
+            Y = new Date();
+            T = (Y.getTime() - X.getTime());
+            M = 24 * 60 * 60 * 1000;
+            a = T / M;
+            A = Math.floor(a);
+            b = (a - A) * 24;
+            B = Math.floor(b);
+            c = (b - B) * 60;
+            C = Math.floor((b - B) * 60);
+            D = Math.floor((c - C) * 60);
+            document.getElementById("webtime").innerHTML = "网站已运行了: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+        }
+        show_runtime();
+    </script>
 </div>
-
-<span id="webtime"></span>
-<!-- js -->
-<script type="text/javascript">function show_runtime() {
-        window.setTimeout("show_runtime()", 1000);
-        X = new Date("12/31/2019 23:59:59");
-        Y = new Date();
-        T = (Y.getTime() - X.getTime());
-        M = 24 * 60 * 60 * 1000;
-        a = T / M;
-        A = Math.floor(a);
-        b = (a - A) * 24;
-        B = Math.floor(b);
-        c = (b - B) * 60;
-        C = Math.floor((b - B) * 60);
-        D = Math.floor((c - C) * 60);
-        document.getElementById("webtime").innerHTML = "网站已运行了: " + A + "天" + B + "小时" + C + "分" + D + "秒"
-    }
-    show_runtime();
-</script>
 
 <script type="text/javascript">
 function color16(){
