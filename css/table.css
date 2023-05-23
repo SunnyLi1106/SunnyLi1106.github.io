@@ -1,0 +1,10 @@
+.table-container {
+    overflow: auto;
+    margin-bottom: 16px;
+}
+
+/* Avoid affecting the style of codeblock */
+.markdown-body .table-container table {
+    display: table !important;
+    margin-bottom: 0 !important;
+}
