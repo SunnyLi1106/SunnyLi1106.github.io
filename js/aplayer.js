@@ -14,7 +14,7 @@ const ap = new APlayer({
         name: 'Starlight',
         artist: 'Synthion',
         url: 'http://music.163.com/song/media/outer/url?id=1501952919.mp3',
-        cover: 'http://p1.music.126.net/hvc3dltT_yXPJGQBXU361Q==/109951165397851146.jpg',
+        cover: 'http://p2.music.126.net/CaGsgGq4eh8LO5NHzsut7w==/109951167934830349.jpg',
     }, 
     {
         name: 'By My Side',
