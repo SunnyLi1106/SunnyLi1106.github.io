@@ -4,29 +4,23 @@ const ap = new APlayer({
     fixed: true,
 	autoplay: false,
     audio: [
-	{
-        name: 'Swift',
-        artist: 'Synthion',
-        url: 'http://music.163.com/song/media/outer/url?id=1501952920.mp3',
-        cover: 'http://p2.music.126.net/CaGsgGq4eh8LO5NHzsut7w==/109951167934830349.jpg',
+    {
+        name: 'Sunburst',
+        artist: 'Tobu / Itro',
+        url: 'http://music.163.com/song/media/outer/url?id=28830411.mp3',
+        cover: 'http://p2.music.126.net/AWDnHZIVbGI-PSo248vm8Q==/109951167481013649.jpg',
     }, 
     {
-        name: 'Starlight',
-        artist: 'Synthion',
-        url: 'http://music.163.com/song/media/outer/url?id=1501952919.mp3',
-        cover: 'http://p2.music.126.net/CaGsgGq4eh8LO5NHzsut7w==/109951167934830349.jpg',
+        name: 'Infectious',
+        artist: 'Tobu',
+        url: 'http://music.163.com/song/media/outer/url?id=28830409.mp3',
+        cover: 'http://p2.music.126.net/xQeIwDrMh_UeMwhZ-CrzVQ==/109951165358935018.jpg',
     }, 
     {
         name: 'By My Side',
         artist: 'Synthion / Yuuna Nini',
         url: 'http://music.163.com/song/media/outer/url?id=2014406819.mp3',
         cover: 'http://p1.music.126.net/-8YI4jH9WC4BjUCAQ_8T1g==/109951168233398874.jpg',
-    }, 
-    {
-        name: 'Blossom',
-        artist: 'Synthion',
-        url: 'http://music.163.com/song/media/outer/url?id=1501952921.mp3',
-        cover: 'http://p2.music.126.net/CaGsgGq4eh8LO5NHzsut7w==/109951167934830349.jpg',
     }, 
     {
         name: 'Maboroshi',
