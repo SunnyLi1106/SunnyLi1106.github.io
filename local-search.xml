@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>题解 P9810 [CCC 2015 S1] Zero That Out</title>
+    <link href="/solution-p9810/"/>
+    <url>/solution-p9810/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://www.luogu.com.cn/problem/p9810">题目传送门</a></p><h1 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路</h1><p>这种题，直接 Python 模拟即可。声明一个列表 <code>a</code>，如果输入 <code>t</code> 等于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，那么删除 <code>a</code> 的最后一个元素，即进行 <code>a.pop()</code> 操作，否则添加该元素，即 <code>a.append(t)</code>。</p><h1 id="ac-代码"><a class="markdownIt-Anchor" href="#ac-代码"></a> AC 代码</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python">a = []<br>k = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())<br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(k):<br>    t = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())<br>    <span class="hljs-keyword">if</span>(t==<span class="hljs-number">0</span>):<br>        a.pop()<br>    <span class="hljs-keyword">else</span>:<br>        a.append(t)<br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">sum</span>(a))<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>洛谷题解</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>OI</tag>
+      
+      <tag>题解</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>物理学习笔记2-圆周运动与向心力</title>
     <link href="/physic-2/"/>
     <url>/physic-2/</url>
