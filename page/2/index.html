@@ -259,6 +259,69 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/solution-at-past202004-e/" target="_self">
+          题解 AT_past202004_e 順列
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/solution-at-past202004-e/" target="_self">
+        <div>
+          思路 按照题意模拟即可。 对于每次按按钮，我们只需要设置一个新变量并且比较即可。 需要注意的有以下几点：   结果 ansansans 的值需要加 111，你可以将其初值设置为 111。   ansansans 需要在每次循环后重新赋初值。   你需要每次循环设定一个新变量 b=a[i]，这样的话就不会影响数组原来的样子。   每次输出之后要加空格而不是换行。    AC 代码 12345678
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-16 11:17" pubdate>
+              2023-06-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="category-chain-item">洛谷题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/OI/">#OI</a>
+            
+              <a href="/tags/%E9%A2%98%E8%A7%A3/">#题解</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/solution-at-jag2017summer-day1-d/" target="_self">
           题解 AT_jag2017summer_day1_d くさかべ
         </a>
@@ -820,69 +883,6 @@
     </article>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/solution-UVA880/" target="_self">
-          题解 UVA880 Cantor Fractions
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/solution-UVA880/" target="_self">
-        <div>
-          思路 小学就学过的找规律题目，重点是要记得二分。 很明显，第 iii 列的分母都为 iii，第 jjj 行的分子为 j−i+1j-i+1j−i+1。  AC 代码 123456789101112131415161718192021222324252627#include&lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;in
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-06-13 13:17" pubdate>
-              2023-06-13
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="category-chain-item">洛谷题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/OI/">#OI</a>
-            
-              <a href="/tags/%E9%A2%98%E8%A7%A3/">#题解</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
 
 
   <nav aria-label="navigation">
@@ -1028,7 +1028,7 @@
       
         jQuery.ajax({
           type: 'GET',
-          url: 'https://v1.hitokoto.cn/?c=d&c=i&c=j',
+          url: 'https://v1.hitokoto.cn/?c=i',
           headers: {},
           dataType: 'json',
           success: function(result) {
@@ -1052,7 +1052,7 @@
           },
           error: function(xhr, status, error) {
             if (error) {
-              console.error('Failed to request https://v1.hitokoto.cn/?c=d&amp;c=i&amp;c=j:', error);
+              console.error('Failed to request https://v1.hitokoto.cn/?c=i:', error);
             }
             typing(text);
           }
@@ -1080,9 +1080,7 @@
 
   
 <script src="/js/canvas-ribbon.js"></script>
-<script src="/js/sakura.js"></script>
 <script src="/js/changetitle.js"></script>
-<script src="/js/bankeys.js"></script>
 <script src="/aplayer/dist/APlayer.min.js"></script>
 <script src="/js/aplayer.js"></script>
 

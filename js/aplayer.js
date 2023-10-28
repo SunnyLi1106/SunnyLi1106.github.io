@@ -17,6 +17,24 @@ const ap = new APlayer({
         cover: 'http://p2.music.126.net/xQeIwDrMh_UeMwhZ-CrzVQ==/109951165358935018.jpg',
     }, 
     {
+        name: 'Cloud 9',
+        artist: 'Tobu / Itro',
+        url: 'http://music.163.com/song/media/outer/url?id=29797443.mp3',
+        cover: 'http://p1.music.126.net/m54DG5vHgly4EXFJ5Z6anA==/109951164385282490.jpg',
+    }, 
+    {
+        name: 'Skyland',
+        artist: 'Mich',
+        url: 'http://music.163.com/song/media/outer/url?id=1911075425.mp3',
+        cover: 'http://p2.music.126.net/cO7ecUdEEHe4-DWrJt41Vw==/109951167749035500.jpg',
+    }, 
+    {
+        name: 'Green Sky',
+        artist: 'Alex Skrindo',
+        url: 'http://music.163.com/song/media/outer/url?id=30064291.mp3',
+        cover: 'http://p1.music.126.net/8FArfoyS7o6ofvQX-vMePg==/109951164447628707.jpg',
+    }, 
+    {
         name: 'By My Side',
         artist: 'Synthion / Yuuna Nini',
         url: 'http://music.163.com/song/media/outer/url?id=2014406819.mp3',

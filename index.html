@@ -393,6 +393,69 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/solution-p9783/" target="_self">
+          题解 P9783 [ROIR 2020 Day1] 平方
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/solution-p9783/" target="_self">
+        <div>
+          题目传送门  过程 显然发现，当 n mod 4=2n\bmod4=2nmod4=2 时，不存在这样的 x,yx,yx,y。否则拆分后一定是一个奇数乘以偶数，则必有一个数不是整数。 当 n mod 4=0n\bmod4=0nmod4=0 时，设 n=2a⋅2bn=2a\cdot 2bn=2a⋅2b，则有 (x+y)(x−y)=2a⋅2b⇒x=a+b,y=a−b(x+y)(x-y)=2a\cdot2
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-10-24 13:42" pubdate>
+              2023-10-24
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="category-chain-item">洛谷题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/OI/">#OI</a>
+            
+              <a href="/tags/%E9%A2%98%E8%A7%A3/">#题解</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/solution-P9582/" target="_self">
           题解 P9582 方格
         </a>
@@ -828,69 +891,6 @@
     </article>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/solution-at-past202004-e/" target="_self">
-          题解 AT_past202004_e 順列
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/solution-at-past202004-e/" target="_self">
-        <div>
-          思路 按照题意模拟即可。 对于每次按按钮，我们只需要设置一个新变量并且比较即可。 需要注意的有以下几点：   结果 ansansans 的值需要加 111，你可以将其初值设置为 111。   ansansans 需要在每次循环后重新赋初值。   你需要每次循环设定一个新变量 b=a[i]，这样的话就不会影响数组原来的样子。   每次输出之后要加空格而不是换行。    AC 代码 12345678
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-06-16 11:17" pubdate>
-              2023-06-16
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="category-chain-item">洛谷题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/OI/">#OI</a>
-            
-              <a href="/tags/%E9%A2%98%E8%A7%A3/">#题解</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
 
 
   <nav aria-label="navigation">
@@ -1036,7 +1036,7 @@
       
         jQuery.ajax({
           type: 'GET',
-          url: 'https://v1.hitokoto.cn/?c=d&c=i&c=j',
+          url: 'https://v1.hitokoto.cn/?c=i',
           headers: {},
           dataType: 'json',
           success: function(result) {
@@ -1060,7 +1060,7 @@
           },
           error: function(xhr, status, error) {
             if (error) {
-              console.error('Failed to request https://v1.hitokoto.cn/?c=d&amp;c=i&amp;c=j:', error);
+              console.error('Failed to request https://v1.hitokoto.cn/?c=i:', error);
             }
             typing(text);
           }
@@ -1088,9 +1088,7 @@
 
   
 <script src="/js/canvas-ribbon.js"></script>
-<script src="/js/sakura.js"></script>
 <script src="/js/changetitle.js"></script>
-<script src="/js/bankeys.js"></script>
 <script src="/aplayer/dist/APlayer.min.js"></script>
 <script src="/js/aplayer.js"></script>
 

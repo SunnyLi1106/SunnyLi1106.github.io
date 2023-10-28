@@ -256,6 +256,69 @@
   <div class="row mx-auto index-card">
     
     
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/solution-UVA880/" target="_self">
+          题解 UVA880 Cantor Fractions
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/solution-UVA880/" target="_self">
+        <div>
+          思路 小学就学过的找规律题目，重点是要记得二分。 很明显，第 iii 列的分母都为 iii，第 jjj 行的分子为 j−i+1j-i+1j−i+1。  AC 代码 123456789101112131415161718192021222324252627#include&lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;in
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-13 13:17" pubdate>
+              2023-06-13
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="category-chain-item">洛谷题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/OI/">#OI</a>
+            
+              <a href="/tags/%E9%A2%98%E8%A7%A3/">#题解</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
       <div class="col-12 col-md-4 m-auto index-img">
         <a href="/physic-1/" target="_self">
           <img src="/img/banner/physic1.png" srcset="/img/loading.gif" lazyload alt="物理学习笔记1-角动量与转动惯量">
@@ -826,69 +889,6 @@
     </article>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/solution-P8682/" target="_self">
-          题解 P8682 [蓝桥杯 2019 省 B] 等差数列
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/solution-P8682/" target="_self">
-        <div>
-          思路 如果你随便试几个数，你就会发现这个等差数列的公差其实就是这个数列里从小到大两个数之差的最大公因数。 举个栗子： 3971153\quad9\quad7\quad1\quad15397115 对他进行排序 1379151\quad3\quad7\quad9\quad15137915 求相邻两数之差分别为 24262\quad4\quad2\quad62426 计算易得最大公因数为 222 最
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-04-22 15:19" pubdate>
-              2023-04-22
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="category-chain-item">洛谷题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/OI/">#OI</a>
-            
-              <a href="/tags/%E9%A2%98%E8%A7%A3/">#题解</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
 
 
   <nav aria-label="navigation">
@@ -1034,7 +1034,7 @@
       
         jQuery.ajax({
           type: 'GET',
-          url: 'https://v1.hitokoto.cn/?c=d&c=i&c=j',
+          url: 'https://v1.hitokoto.cn/?c=i',
           headers: {},
           dataType: 'json',
           success: function(result) {
@@ -1058,7 +1058,7 @@
           },
           error: function(xhr, status, error) {
             if (error) {
-              console.error('Failed to request https://v1.hitokoto.cn/?c=d&amp;c=i&amp;c=j:', error);
+              console.error('Failed to request https://v1.hitokoto.cn/?c=i:', error);
             }
             typing(text);
           }
@@ -1086,9 +1086,7 @@
 
   
 <script src="/js/canvas-ribbon.js"></script>
-<script src="/js/sakura.js"></script>
 <script src="/js/changetitle.js"></script>
-<script src="/js/bankeys.js"></script>
 <script src="/aplayer/dist/APlayer.min.js"></script>
 <script src="/js/aplayer.js"></script>
 
