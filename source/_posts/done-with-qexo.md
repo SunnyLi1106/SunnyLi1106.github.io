@@ -8,4 +8,4 @@ tags:
 title: 成功配置Qexo啦！
 updated: 2023-11-25T22:10:3.859+8:0
 ---
-Testing Qexo~
+Wait！Testing Qexo~
