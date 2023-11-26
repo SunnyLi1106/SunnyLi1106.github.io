@@ -1,0 +1,38 @@
+name: Deploy GH Pages                      # Actions 显示的名字，随意设置
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout              # 拉取当前执行 Actions 仓库的指定分支
+      uses: actions/checkout@v3
+      with:
+        ref: build
+
+    - name: Update Submodule      # 如果仓库有 submodule，在这里更新，没有则删掉此步骤
+      run: |
+        git submodule init
+        git submodule update --remote
+
+    - name: Setup Node            # 安装 Node 环境
+      uses: actions/setup-node@v3
+      with:
+        node-version: "16"
+
+    - name: Hexo Generate         # 安装 Hexo 依赖并且生成静态文件
+      run: |
+        rm -f .yarnclean
+        yarn --frozen-lockfile --ignore-engines --ignore-optional --non-interactive --silent --ignore-scripts --production=false
+        rm -rf ./public
+        yarn run hexo clean
+        yarn run hexo generate
+
+    - name: Hexo Deploy
+      run: |
+        git config --global user.email "5327136@qq.com"
+        git config --global user.name "SunnyLi1106"
+        yarn run hexo deploy
