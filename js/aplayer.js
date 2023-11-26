@@ -11,10 +11,10 @@ const ap = new APlayer({
         cover: 'https://p2.music.126.net/AWDnHZIVbGI-PSo248vm8Q==/109951167481013649.jpg',
     }, 
     {
-        name: 'Infectious',
-        artist: 'Tobu',
-        url: 'https://music.163.com/song/media/outer/url?id=28830409.mp3',
-        cover: 'https://p2.music.126.net/xQeIwDrMh_UeMwhZ-CrzVQ==/109951165358935018.jpg',
+        name: 'Aeon',
+        artist: 'JJD',
+        url: 'https://music.163.com/song/media/outer/url?id=1399058692.mp3',
+        cover: 'http://p1.music.126.net/w1YyVF0kaDh7ZJoHJFo9AA==/109951164447218546.jpg',
     }, 
     {
         name: 'Cloud 9',
@@ -39,12 +39,6 @@ const ap = new APlayer({
         artist: 'Synthion / Yuuna Nini',
         url: 'https://music.163.com/song/media/outer/url?id=2014406819.mp3',
         cover: 'https://p1.music.126.net/-8YI4jH9WC4BjUCAQ_8T1g==/109951168233398874.jpg',
-    }, 
-    {
-        name: 'Maboroshi',
-        artist: 'Synthion / Hyper Potions / MYLK',
-        url: 'https://music.163.com/song/media/outer/url?id=1354965157.mp3',
-        cover: 'https://p1.music.126.net/hvc3dltT_yXPJGQBXU361Q==/109951165397851146.jpg',
     }, 
 	]
 });
