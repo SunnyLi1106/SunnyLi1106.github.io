@@ -103,7 +103,7 @@ theme: fluid
 ## Docs: npm install hexo-deployer-git --save
 deploy:
   type: 'git'
-  repo: https://SunnyLi1106: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@github.com/SunnyLi1106/SunnyLi1106.github.io.git 
+  repo: https://SunnyLi1106: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@github.com/SunnyLi1106/SunnyLi1106.github.io.git 
   branch: main
 
 markdown:
