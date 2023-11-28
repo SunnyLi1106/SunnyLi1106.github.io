@@ -17,6 +17,12 @@ const ap = new APlayer({
         cover: 'http://p1.music.126.net/w1YyVF0kaDh7ZJoHJFo9AA==/109951164447218546.jpg',
     }, 
     {
+        name: 'Face Down (Original Mix)',
+        artist: 'Feint',
+        url: 'https://music.163.com/song/media/outer/url?id=29491727.mp3',
+        cover: 'http://p2.music.126.net/chqTwmFt5pFV90JW70uHsw==/2533274791300594.jpg',
+    }, 
+    {
         name: 'Cloud 9',
         artist: 'Tobu / Itro',
         url: 'https://music.163.com/song/media/outer/url?id=29797443.mp3',
