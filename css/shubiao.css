@@ -1,21 +1,21 @@
-/* 鼠标指针图标bynote.cn */
+/* 鼠标指针样式 */
 
 body {
-    cursor: url(/img/cursor/arrow.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/arrow.png), auto;
 }
 
 
 /*a标签*/
 
 a:hover {
-    cursor: url(/img/cursor/link.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/link.png), auto;
 }
 
 
 /*按钮*/
 
 button:hover {
-    cursor: url(/img/cursor/link.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/link.png), auto;
 }
 
 #rightside>div>button,
@@ -27,50 +27,50 @@ button:hover {
     color: var(--btn-color);
     text-align: center;
     font-size: 16px;
-    cursor: url(/img/cursor/link.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/link.png), auto;
 }
 
 
 /* 文章标签 */
 
 .layout_post .tag_share .post-meta__tags {
-    cursor: url(/img/cursor/link.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/link.png), auto;
 }
 
 
 /* 评论区 */
 
 .vcol * {
-    cursor: url(/img/cursor/beam.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/beam.png), auto;
 }
 
 .v[data-class=v] .vicon {
-    cursor: url(/img/cursor/beam.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/beam.png), auto;
 }
 
 .v[data-class=v] .vbtn {
-    cursor: url(/img/cursor/beam.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/beam.png), auto;
 }
 
 
 /* 回复 */
 
 .vat {
-    cursor: url(/img/cursor/beam.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/beam.png), auto;
 }
 
 
 /*i标签*/
 
 i:hover {
-    cursor: url(/img/cursor/link.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/link.png), auto;
 }
 
 
 /*up酱*/
 
 #upj:hover {
-    cursor: url(/img/cursor/link.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/link.png), auto;
 }
 
 
@@ -78,7 +78,7 @@ i:hover {
 /*分页器*/
 
 #pagination .page-number:hover {
-    cursor: url(/img/cursor/link.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/link.png), auto;
 }
 /* 分页器的三个点(...) */
 .space {
@@ -86,9 +86,9 @@ i:hover {
 }
 
 #local-search-input{
-    cursor: url(/img/cursor/beam.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/beam.png), auto;
 }
 
 .banner{
-    cursor: url(/img/cursor/arrow.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/SunnyLi1106/FileRepoCDN/image/cursor/arrow.png), auto;
 }
