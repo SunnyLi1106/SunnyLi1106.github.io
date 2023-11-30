@@ -46,11 +46,5 @@ const ap = new APlayer({
         url: 'https://music.163.com/song/media/outer/url?id=2014406819.mp3',
         cover: 'https://p1.music.126.net/-8YI4jH9WC4BjUCAQ_8T1g==/109951168233398874.jpg',
     }, 
-    {
-        name: '青春コンプレックス',
-        artist: '結束バンド',
-        url: 'https://music.163.com/song/media/outer/url?id=1983527215.mp3',
-        cover: 'http://p2.music.126.net/VXqVAs8P4ko7j7ft94KUiw==/109951167898699349.jpg',
-    }, 
 	]
 });
