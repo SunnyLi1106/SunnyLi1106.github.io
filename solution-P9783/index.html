@@ -17,15 +17,15 @@
   <meta name="author" content="SunnyLi">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目传送门  思路 这种题，直接 Python 模拟即可。声明一个列表 a，如果输入 t 等于 000，那么删除 a 的最后一个元素，即进行 a.pop() 操作，否则添加该元素，即 a.append(t)。  AC 代码 123456789a &#x3D; []k &#x3D; int(input())for i in range(k):    t &#x3D; int(input())    if(t&#x3D;&#x3D;0):">
+    <meta name="description" content="题目传送门  过程 显然发现，当 n mod 4&#x3D;2n\bmod4&#x3D;2nmod4&#x3D;2 时，不存在这样的 x,yx,yx,y。否则拆分后一定是一个奇数乘以偶数，则必有一个数不是整数。 当 n mod 4&#x3D;0n\bmod4&#x3D;0nmod4&#x3D;0 时，设 n&#x3D;2a⋅2bn&#x3D;2a\cdot 2bn&#x3D;2a⋅2b，则有 (x+y)(x−y)&#x3D;2a⋅2b⇒x&#x3D;a+b,y&#x3D;a−b(x+y)(x-y)&#x3D;2a\cdot2">
 <meta property="og:type" content="article">
-<meta property="og:title" content="题解 P9810 [CCC 2015 S1] Zero That Out">
-<meta property="og:url" content="https://sunnyli.咕咕咕.eu.org/solution-p9810/index.html">
+<meta property="og:title" content="题解 P9783 [ROIR 2020 Day1] 平方">
+<meta property="og:url" content="https://sunnyli.咕咕咕.eu.org/solution-P9783/index.html">
 <meta property="og:site_name" content="SunnyLi&#39;s Blog">
-<meta property="og:description" content="题目传送门  思路 这种题，直接 Python 模拟即可。声明一个列表 a，如果输入 t 等于 000，那么删除 a 的最后一个元素，即进行 a.pop() 操作，否则添加该元素，即 a.append(t)。  AC 代码 123456789a &#x3D; []k &#x3D; int(input())for i in range(k):    t &#x3D; int(input())    if(t&#x3D;&#x3D;0):">
+<meta property="og:description" content="题目传送门  过程 显然发现，当 n mod 4&#x3D;2n\bmod4&#x3D;2nmod4&#x3D;2 时，不存在这样的 x,yx,yx,y。否则拆分后一定是一个奇数乘以偶数，则必有一个数不是整数。 当 n mod 4&#x3D;0n\bmod4&#x3D;0nmod4&#x3D;0 时，设 n&#x3D;2a⋅2bn&#x3D;2a\cdot 2bn&#x3D;2a⋅2b，则有 (x+y)(x−y)&#x3D;2a⋅2b⇒x&#x3D;a+b,y&#x3D;a−b(x+y)(x-y)&#x3D;2a\cdot2">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-10-25T22:57:10.000Z">
-<meta property="article:modified_time" content="2023-10-27T05:42:52.000Z">
+<meta property="article:published_time" content="2023-10-24T13:42:59.000Z">
+<meta property="article:modified_time" content="2023-10-28T07:26:47.000Z">
 <meta property="article:author" content="SunnyLi">
 <meta property="article:tag" content="OI">
 <meta property="article:tag" content="题解">
@@ -35,7 +35,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>题解 P9810 [CCC 2015 S1] Zero That Out - SunnyLi&#39;s Blog</title>
+  <title>题解 P9783 [ROIR 2020 Day1] 平方 - SunnyLi&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -269,7 +269,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="题解 P9810 [CCC 2015 S1] Zero That Out"></span>
+            <span id="subtitle" data-typed-text="题解 P9783 [ROIR 2020 Day1] 平方"></span>
           
         </div>
 
@@ -285,8 +285,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-25 22:57" pubdate>
-          2023年10月25日 晚上
+        <time datetime="2023-10-24 13:42" pubdate>
+          2023年10月24日 下午
         </time>
       </span>
     
@@ -297,7 +297,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          195 字
+          827 字
         
       </span>
     
@@ -308,7 +308,7 @@
         
         
         
-          2 分钟
+          7 分钟
         
       </span>
     
@@ -358,16 +358,18 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">题解 P9810 [CCC 2015 S1] Zero That Out</h1>
+            <h1 style="display: none">题解 P9783 [ROIR 2020 Day1] 平方</h1>
             
             
               <div class="markdown-body">
                 
-                <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/p9810">题目传送门</a></p>
-<h1 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路</h1>
-<p>这种题，直接 Python 模拟即可。声明一个列表 <code>a</code>，如果输入 <code>t</code> 等于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，那么删除 <code>a</code> 的最后一个元素，即进行 <code>a.pop()</code> 操作，否则添加该元素，即 <code>a.append(t)</code>。</p>
-<h1 id="ac-代码"><a class="markdownIt-Anchor" href="#ac-代码"></a> AC 代码</h1>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python">a = []<br>k = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())<br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(k):<br>    t = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())<br>    <span class="hljs-keyword">if</span>(t==<span class="hljs-number">0</span>):<br>        a.pop()<br>    <span class="hljs-keyword">else</span>:<br>        a.append(t)<br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">sum</span>(a))<br></code></pre></td></tr></table></figure>
+                <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P9783">题目传送门</a></p>
+<h1 id="过程"><a class="markdownIt-Anchor" href="#过程"></a> 过程</h1>
+<p>显然发现，当 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mn>4</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n\bmod4=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span><span class="mbin"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span> 时，不存在这样的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x,y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span>。否则拆分后一定是一个奇数乘以偶数，则必有一个数不是整数。</p>
+<p>当 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mn>4</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n\bmod4=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span><span class="mbin"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 时，设 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mi>a</mi><mo>⋅</mo><mn>2</mn><mi>b</mi></mrow><annotation encoding="application/x-tex">n=2a\cdot 2b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathdefault">b</span></span></span></span>，则有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>a</mi><mo>⋅</mo><mn>2</mn><mi>b</mi><mo>⇒</mo><mi>x</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo separator="true">,</mo><mi>y</mi><mo>=</mo><mi>a</mi><mo>−</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">(x+y)(x-y)=2a\cdot2b\Rightarrow x=a+b,y=a-b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span>。</p>
+<p>当 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mn>2</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\bmod2=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span><span class="mbin"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 时，设 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n=2k+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，则有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>=</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo separator="true">,</mo><mi>y</mi><mo>=</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">x=k+1,y=k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>。</p>
+<h1 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h1>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>);<br>    <span class="hljs-type">long</span> <span class="hljs-type">long</span> n;cin&gt;&gt;n;<br>    <span class="hljs-keyword">if</span>(n==<span class="hljs-number">1</span> <span class="hljs-keyword">or</span> n==<span class="hljs-number">4</span>)&#123;cout&lt;&lt;<span class="hljs-string">&quot;No&quot;</span>;<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;&#125;<br>    <span class="hljs-keyword">if</span>(n%<span class="hljs-number">4</span>==<span class="hljs-number">2</span>)&#123;cout&lt;&lt;<span class="hljs-string">&quot;No&quot;</span>;<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;&#125;<br>    cout&lt;&lt;<span class="hljs-string">&quot;Yes&quot;</span>&lt;&lt;endl;<br>    <span class="hljs-keyword">if</span>(n%<span class="hljs-number">4</span>==<span class="hljs-number">0</span>)&#123;<br>        n/=<span class="hljs-number">4</span>;<span class="hljs-type">long</span> <span class="hljs-type">long</span> a=<span class="hljs-number">2</span>;<br>        <span class="hljs-keyword">while</span>(n%a!=<span class="hljs-number">0</span>)   a++;<br>        cout&lt;&lt;(a+n/a)&lt;&lt;<span class="hljs-string">&quot; &quot;</span>&lt;&lt;(<span class="hljs-built_in">abs</span>(a-n/a));<br>    &#125;<br>    <span class="hljs-keyword">else</span>&#123;<br>        <span class="hljs-type">long</span> <span class="hljs-type">long</span> a=(n<span class="hljs-number">-1</span>)/<span class="hljs-number">2</span>;<br>        cout&lt;&lt;(a+<span class="hljs-number">1</span>)&lt;&lt;<span class="hljs-string">&quot; &quot;</span>&lt;&lt;(a);<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -415,8 +417,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>题解 P9810 [CCC 2015 S1] Zero That Out</div>
-      <div>https://sunnyli.咕咕咕.eu.org/solution-p9810/</div>
+      <div>题解 P9783 [ROIR 2020 Day1] 平方</div>
+      <div>https://sunnyli.咕咕咕.eu.org/solution-P9783/</div>
     </div>
     <div class="license-meta">
       
@@ -428,7 +430,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年10月25日</div>
+          <div>2023年10月24日</div>
         </div>
       
       
@@ -460,12 +462,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/solution-P9810/" title="题解 P9810 [CCC 2015 S1] Zero That Out">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">题解 P9810 [CCC 2015 S1] Zero That Out</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/solution-p9783/" title="题解 P9783 [ROIR 2020 Day1] 平方">
-                        <span class="hidden-mobile">题解 P9783 [ROIR 2020 Day1] 平方</span>
+                      <a href="/dimensional-analysis/" title="浅谈量纲分析">
+                        <span class="hidden-mobile">浅谈量纲分析</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

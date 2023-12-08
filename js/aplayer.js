@@ -29,6 +29,18 @@ const ap = new APlayer({
         cover: 'http://p1.music.126.net/FkDHefqpHyhxUdxWFug7mg==/109951165732553232.jpg',
     },
     {
+        name: 'Traveller',
+        artist: 'Melano',
+        url: 'https://music.163.com/song/media/outer/url?id=407485771.mp3',
+        cover: 'http://p1.music.126.net/_bcmI_UZ522DhqwpMYfIDw==/109951163311352901.jpg',
+    },
+    {
+        name: 'Forever',
+        artist: 'Vanze / Brenton Mattheus',
+        url: 'https://music.163.com/song/media/outer/url?id=417247671.mp3',
+        cover: 'http://p1.music.126.net/Azfnbngxtl2ZOwLjcLZbzw==/109951168166434748.jpg',
+    },
+    {
         name: 'Higher',
         artist: 'Tobu',
         url: 'https://music.163.com/song/media/outer/url?id=28830412.mp3',
@@ -45,6 +57,24 @@ const ap = new APlayer({
         artist: 'Alex Skrindo',
         url: 'https://music.163.com/song/media/outer/url?id=30064291.mp3',
         cover: 'https://p1.music.126.net/8FArfoyS7o6ofvQX-vMePg==/109951164447628707.jpg',
+    }, 
+    {
+        name: 'Sky',
+        artist: 'Alan Walker / Alex Skrindo',
+        url: 'https://music.163.com/song/media/outer/url?id=482988841.mp3',
+        cover: 'http://p1.music.126.net/kCtQrSaLZmQ31dPTgFlX7g==/109951166501577067.jpg',
+    }, 
+    {
+        name: 'Fade Away (Deaf Kev Remix)',
+        artist: 'Jacob Tillberg / DEAF KEV',
+        url: 'https://music.163.com/song/media/outer/url?id=1912666611.mp3',
+        cover: 'http://p2.music.126.net/spXoYytdfGJT3IIMglZl5w==/109951166941582197.jpg',
+    }, 
+    {
+        name: 'Remember',
+        artist: 'Sensitive',
+        url: 'https://music.163.com/song/media/outer/url?id=1939769563.mp3',
+        cover: 'http://p2.music.126.net/AIQsGlFrsEDK6dwNriUd5A==/109951167317324100.jpg',
     }, 
     {
         name: 'Blank',
@@ -71,10 +101,52 @@ const ap = new APlayer({
         cover: 'https://p1.music.126.net/m54DG5vHgly4EXFJ5Z6anA==/109951164385282490.jpg',
     }, 
     {
+        name: 'Adore',
+        artist: 'LIONE',
+        url: 'https://music.163.com/song/media/outer/url?id=516654108.mp3',
+        cover: 'http://p1.music.126.net/opGdClkuEGgrL04QW2M42g==/109951164361946069.jpg',
+    }, 
+    {
+        name: 'Nebula',
+        artist: 'ESAI / Pure 100%',
+        url: 'https://music.163.com/song/media/outer/url?id=2083057466.mp3',
+        cover: 'http://p1.music.126.net/wdcqC0O_yu6pUM1VOul1Ew==/109951168923742133.jpg',
+    }, 
+    {
+        name: 'Gacha Cowbell',
+        artist: 'Gaiyu',
+        url: 'https://music.163.com/song/media/outer/url?id=2061055630.mp3',
+        cover: 'http://p2.music.126.net/_4MBitzrA1T6O6MQ-m4oqg==/109951168715986480.jpg',
+    }, 
+    {
         name: 'By My Side',
         artist: 'Synthion / Yuuna Nini',
         url: 'https://music.163.com/song/media/outer/url?id=2014406819.mp3',
         cover: 'https://p1.music.126.net/-8YI4jH9WC4BjUCAQ_8T1g==/109951168233398874.jpg',
+    }, 
+    {
+        name: 'Maboroshi',
+        artist: 'Synthion / Hyper Potions / MYLK',
+        url: 'https://music.163.com/song/media/outer/url?id=1354965157.mp3',
+        cover: 'http://p2.music.126.net/hvc3dltT_yXPJGQBXU361Q==/109951165397851146.jpg',
+    }, 
+    {
+        name: '忘れてやらない',
+        artist: '結束バンド',
+        url: 'https://music.163.com/song/media/outer/url?id=2003496467.mp3',
+        cover: 'http://p2.music.126.net/XXyvKxoGL4PUeSlb9uU2eg==/109951168110215317.jpg',
+    }, 
+    {
+        name: 'ギターと孤独と蒼い惑星',
+        artist: '結束バンド',
+        url: 'https://music.163.com/song/media/outer/url?id=2003496923.mp3',
+        cover: 'http://p1.music.126.net/dqzbrDjhtm4p9zoeCAGByA==/109951168110209473.jpg',
+    }, 
+    {
+        name: 'ユーフォリア',
+        artist: 'TOFIE',
+        url: 'https://music.163.com/song/media/outer/url?id=1494550834.mp3',
+        cover: 'data-src="http://p1.music.126.net/1THEGyRaZKBeqTwtoKgtgQ==/109951165461408804.jpg"',
     }, 
 	]
 });
