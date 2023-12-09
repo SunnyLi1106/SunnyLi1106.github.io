@@ -146,7 +146,7 @@ const ap = new APlayer({
         name: 'ユーフォリア',
         artist: 'TOFIE',
         url: 'https://music.163.com/song/media/outer/url?id=1494550834.mp3',
-        cover: 'data-src="http://p1.music.126.net/1THEGyRaZKBeqTwtoKgtgQ==/109951165461408804.jpg"',
+        cover: 'http://p1.music.126.net/1THEGyRaZKBeqTwtoKgtgQ==/109951165461408804.jpg',
     }, 
 	]
 });
