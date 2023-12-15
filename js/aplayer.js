@@ -29,6 +29,42 @@ const ap = new APlayer({
         cover: 'http://p1.music.126.net/FkDHefqpHyhxUdxWFug7mg==/109951165732553232.jpg',
     },
     {
+        name: 'Limitless',
+        artist: 'Elektronomia',
+        url: 'https://music.163.com/song/media/outer/url?id=463840575.mp3',
+        cover: 'http://p1.music.126.net/s1dJFjx8uBjLqtVJtaVrbw==/109951163371292174.jpg',
+    },
+    {
+        name: 'Alone',
+        artist: 'Marshmello',
+        url: 'https://music.163.com/song/media/outer/url?id=412785957.mp3',
+        cover: 'http://p2.music.126.net/bMmu6yG6Hm9ySSibyZ-MtQ==/109951163311376025.jpg',
+    },
+    {
+        name: 'Sky High',
+        artist: 'Elektronomia',
+        url: 'https://music.163.com/song/media/outer/url?id=451126088.mp3',
+        cover: 'http://p1.music.126.net/gXmQeBb7S5IPIb_6RkYUaw==/109951169026167564.jpg',
+    },
+    {
+        name: 'Oasis',
+        artist: 'LOCH',
+        url: 'https://music.163.com/song/media/outer/url?id=30373291.mp3',
+        cover: 'http://p2.music.126.net/_uHe8oVEyruV_dro5nYrKw==/109951164396263986.jpg',
+    },
+    {
+        name: 'Ark',
+        artist: 'Ship Wrek / Zookeepers',
+        url: 'https://music.163.com/song/media/outer/url?id=413834209.mp3',
+        cover: 'http://p1.music.126.net/yHh0hp5jGp-TnaWDcLQk7Q==/1396379775681595.jpg',
+    },
+    {
+        name: 'On & On',
+        artist: 'Cartoon / Daniel Levi',
+        url: 'https://music.163.com/song/media/outer/url?id=33579224.mp3',
+        cover: 'http://p2.music.126.net/g21YurfQ20OVqa_iEonT7w==/109951168069542347.jpg',
+    },
+    {
         name: 'Traveller',
         artist: 'Melano',
         url: 'https://music.163.com/song/media/outer/url?id=407485771.mp3',
@@ -123,30 +159,6 @@ const ap = new APlayer({
         artist: 'Synthion / Yuuna Nini',
         url: 'https://music.163.com/song/media/outer/url?id=2014406819.mp3',
         cover: 'https://p1.music.126.net/-8YI4jH9WC4BjUCAQ_8T1g==/109951168233398874.jpg',
-    }, 
-    {
-        name: 'Maboroshi',
-        artist: 'Synthion / Hyper Potions / MYLK',
-        url: 'https://music.163.com/song/media/outer/url?id=1354965157.mp3',
-        cover: 'http://p2.music.126.net/hvc3dltT_yXPJGQBXU361Q==/109951165397851146.jpg',
-    }, 
-    {
-        name: '忘れてやらない',
-        artist: '結束バンド',
-        url: 'https://music.163.com/song/media/outer/url?id=2003496467.mp3',
-        cover: 'http://p2.music.126.net/XXyvKxoGL4PUeSlb9uU2eg==/109951168110215317.jpg',
-    }, 
-    {
-        name: 'ギターと孤独と蒼い惑星',
-        artist: '結束バンド',
-        url: 'https://music.163.com/song/media/outer/url?id=2003496923.mp3',
-        cover: 'http://p1.music.126.net/dqzbrDjhtm4p9zoeCAGByA==/109951168110209473.jpg',
-    }, 
-    {
-        name: 'ユーフォリア',
-        artist: 'TOFIE',
-        url: 'https://music.163.com/song/media/outer/url?id=1494550834.mp3',
-        cover: 'http://p1.music.126.net/1THEGyRaZKBeqTwtoKgtgQ==/109951165461408804.jpg',
-    }, 
+    }
 	]
 });
